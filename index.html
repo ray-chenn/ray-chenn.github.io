@@ -33,8 +33,16 @@ h1 {text-align: center;}
   transform: translate(-50%, -50%);
 }
 
+.topnav-right {
+  float: right;
+}
 
 @media screen and (max-width: 600px) {
+  .topnav a, .topnav-right {
+    float: none;
+    display: block;
+  }
+  
   .topnav-centered a {
     position: relative;
     top: 0;
