@@ -15,13 +15,9 @@ h1 {text-align: center;}
 		.navbar{
 			background: black;
 		}
-	.navdiv a {
-  float: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+		.navdiv{
+			display: flex; align-items: center; justify-content: space-between;
+		}
 		.logo a{
 			font-size: 35px; font-weight: 600; color: white;
 		}
@@ -39,8 +35,8 @@ h1 {text-align: center;}
 
 <nav class="navbar">
 		<div class="navdiv">
-      <a href="#home" class="active">Overview</a>
-      <a href="#home" class="active">Experience and Works</a>
+      <a href="#home" class="active">Home</a>
+      <a href="#home" class="active">Works and Experience</a>
       <a href="#home" class="active">Contact</a>
 		</div>
 	</nav>
