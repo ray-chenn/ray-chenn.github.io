@@ -5,13 +5,13 @@
         background-color: cyan;
       }
 h1 {text-align: center;}
-.topnav {
+.nav {
   position: relative;
   overflow: hidden;
   background-color: black;
 }
 
-.topnav a {
+.nav a {
   float: left;
   color: #f2f2f2;
   text-align: center;
@@ -20,12 +20,12 @@ h1 {text-align: center;}
   font-size: 17px;
 }
 
-.topnav a:hover {
+.nav a:hover {
   background-color: #ddd;
   color: black;
 }
 
-.topnav-centered a {
+.nav-centered a {
   float: none;
   position: absolute;
   top: 50%;
@@ -33,17 +33,17 @@ h1 {text-align: center;}
   transform: translate(-50%, -50%);
 }
 
-.topnav-right {
+.nav-right {
   float: right;
 }
 
 @media screen and (max-width: 600px) {
-  .topnav a, .topnav-right {
+  .nav a, .nav-right {
     float: none;
     display: block;
   }
   
-  .topnav-centered a {
+  .nav-centered a {
     position: relative;
     top: 0;
     left: 0;
@@ -56,20 +56,11 @@ h1 {text-align: center;}
 
 <h1>Ray Chen</h1>
 
-<div class="topnav">
+<div class="nav">
 
-  <div class="topnav-centered">
+  <div class="nav-centered">
     <a href="#home">Home</a>
   </div>
-  
-  <a href="#news">News</a>
-  <a href="#contact">Contact</a>
-  
-  <div class="topnav-right">
-    <a href="#search">Search</a>
-    <a href="#about">About</a>
-  </div>
-  
 </div>
 
 </body>
