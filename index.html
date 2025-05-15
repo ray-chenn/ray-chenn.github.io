@@ -3,53 +3,44 @@
 <style>
     body {
         background-color: cyan;
-      }
-h1 {text-align: center;}
-.nav {
-  position: relative;
-  overflow: hidden;
-  background-color: black;
-}
+    }
 
-.nav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
+    h1 {
+        text-align: center;
+    }
 
-.nav a:hover {
-  background-color: #ddd;
-  color: black;
-}
+    .nav {
+        display: flex;
+        justify-content: center; /* Horizontally center the nav items */
+        align-items: center;     /* Vertically center them (optional) */
+        flex-wrap: wrap;         /* Wrap to next line on small screens */
+        background-color: black;
+        padding: 10px 0;
+    }
 
-.nav-centered a {
-  float: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+    .nav a {
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        margin: 0 5px;
+    }
 
-.nav-right {
-  float: right;
-}
+    .nav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
 
-@media screen and (max-width: 600px) {
-  .nav a, .nav-right {
-    float: none;
-    display: block;
-  }
-  
-  .nav-centered a {
-    position: relative;
-    top: 0;
-    left: 0;
-    transform: none;
-  }
-}
+    @media screen and (max-width: 600px) {
+        .nav {
+            flex-direction: column; 
+        }
+
+        .nav a {
+            margin: 5px 0;
+        }
+    }
 </style>
 </head>
 <body>
@@ -57,10 +48,9 @@ h1 {text-align: center;}
 <h1>Ray Chen</h1>
 
 <div class="nav">
-
-  <div class="nav-centered">
-    <a href="#home">Home</a>
-  </div>
+    <a href="#overview">Home</a>
+    <a href="#experienceandprojects">Experiences and Projects</a>
+    <a href="#contact">Contact</a>
 </div>
 
 </body>
