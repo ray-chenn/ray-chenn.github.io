@@ -8,7 +8,7 @@ h1 {text-align: center;}
 .topnav {
   position: relative;
   overflow: hidden;
-  background-color: #333;
+  background-color: black;
 }
 
 .topnav a {
@@ -25,11 +25,6 @@ h1 {text-align: center;}
   color: black;
 }
 
-.topnav a.active {
-  background-color: #04AA6D;
-  color: white;
-}
-
 .topnav-centered a {
   float: none;
   position: absolute;
@@ -38,16 +33,8 @@ h1 {text-align: center;}
   transform: translate(-50%, -50%);
 }
 
-.topnav-right {
-  float: right;
-}
 
 @media screen and (max-width: 600px) {
-  .topnav a, .topnav-right {
-    float: none;
-    display: block;
-  }
-  
   .topnav-centered a {
     position: relative;
     top: 0;
@@ -64,17 +51,8 @@ h1 {text-align: center;}
 <div class="topnav">
 
   <div class="topnav-centered">
-    <a href="#home" class="active">Home</a>
+    <a href="#home">Home</a>
   </div>
-  
-  <a href="#news">News</a>
-  <a href="#contact">Contact</a>
-  
-  <div class="topnav-right">
-    <a href="#search">Search</a>
-    <a href="#about">About</a>
-  </div>
-  
 </div>
 
 </body>
