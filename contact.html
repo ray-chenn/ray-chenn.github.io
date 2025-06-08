@@ -1,0 +1,59 @@
+<html>
+<head>
+<style>
+    body {
+        background-color: cyan;
+    }
+    
+    table, th, td {
+        border:1px solid black;
+        border-collapse: collapse;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    h2 {
+        text-align: center;
+    }
+    
+    h3 {
+        text-align: center;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: center; 
+        align-items: center;    
+        flex-wrap: wrap;         
+        background-color: black;
+        padding: 10px 0;
+    }
+
+    .nav a {
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        margin: 0 5px;
+    }
+
+    .nav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+    @media screen and (max-width: 600px) {
+        .nav {
+            flex-direction: column; 
+        }
+
+        .nav a {
+            margin: 5px 0;
+        }
+    }
+</style>
+</head>
+<body>
